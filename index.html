@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Walmart</title>
+  </head>
+  <body>
+    <!--Primary navbar-->
+    <nav
+      class="bg-[#0071dc] w-full flex text-center justify-center gap-[30px] p-[20px]"
+    >
+      <object
+        data="walmart-icon.svg"
+        type="image/svg+xml"
+        class="w-12 h-12 bg-[#0071dc]"
+      ></object>
+
+      <div
+        class="hidden xl:flex center gap-[10px] p-[8px] rounded-full bg-[#004f9a]"
+      >
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad46/k2-_0a671c38-d307-447c-835e-7904ab143c26.v1.png"
+          alt=""
+          class="xl:w-[30px]"
+        />
+        <p class="justify-center text-white font-medium">
+          How do you want your items?
+        </p>
+        <select
+          class="text-white bg-[#004f9a]"
+          name="method-of-shipping"
+          id="#"
+        >
+          <option value="#"></option>
+        </select>
+      </div>
+      <div
+        class="flex flex-auto items-center relative bg-white rounded-full h-[50px]"
+      >
+        <input
+          type="text"
+          placeholder="Search everything at Walmart online and in store"
+          class="h-[50px] mx-5 w-full"
+        />
+        <i
+          class="bx bx-search text-white text-xl text-center p-[10px] mr-[10px] rounded-full bg-blue-900"
+        ></i>
+      </div>
+      <div class="hidden md:flex text-white gap-[10px]">
+        <i class="bx bx-heart mt-[15px]"></i>
+        <div>
+          <p>Reorder</p>
+          <p class="font-medium">My Items</p>
+        </div>
+      </div>
+      <div class="hidden md:flex text-white gap-[10px]">
+        <i class="bx bx-user mt-[15px]"></i>
+        <div>
+          <p>Sign In</p>
+          <p class="font-medium">Account</p>
+        </div>
+      </div>
+      <div class="flex text-white gap-[10px]">
+        <div>
+          <i class="bx bx-cart text-2xl"></i>
+          <p>$0.00</p>
+        </div>
+      </div>
+    </nav>
+
+    <!--Second Navbar-->
+    <div
+      class="hidden lg:flex items-center justify-brtween h-[48px] w-full bg-[#f2f8fd]"
+    >
+      <nav class="flex">
+        <ul class="flex flex-row px-[20px] gap-[15px]">
+          <li class="hidden xl:inline font-medium">
+            <a
+              class="cursor-pointer px-2 py-2 rounded-lg focus:border-2 focus:border-black focus:outline-none active:border-2 active:border-black"
+            >
+              <i class="bx bx-category"></i>
+              Departments
+              <i class="bx bx-chevron-down"></i>
+            </a>
+          </li>
+          <li class="hidden xl:inline font-medium">
+            <a
+              class="cursor-pointer px-2 py-2 rounded-lg focus:border-2 focus:border-black focus:outline-none active:border-2 active:border-black"
+            >
+              <i class="bx bx-category"></i>
+              Services
+              <i class="bx bx-chevron-down"></i>
+            </a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">Savings</a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline"
+              >Grocery & Essentials</a
+            >
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline"
+              >Valentine's Day</a
+            >
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">Game Time</a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline"
+              >New & Trending</a
+            >
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">Fashion</a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">Home</a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline"
+              >Electronics</a
+            >
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline"
+              >Gift Ideas</a
+            >
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">Registry</a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">ONE Cash</a>
+          </li>
+          <li>
+            <a class="cursor-pointer text-[14px] active:underline">Walmart+</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--first bento grid-->
+    <div class="grid grid-cols-12 gap-2 p-6">
+      <div class="col-span-3 row-span-3">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-20fc/k2-_02c30dfa-097f-49ff-8c72-45c235a2828a.v1.jpg?odnHeight=256&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="make up"
+            class="rounded-lg"
+          />
+
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              Stay dewy
+              <span class="hidden md:inline">all winter, from $10</span>
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">beauty</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-6 row-span-5">
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-e9ce/k2-_40306ce8-297e-4547-9115-884cecf459e5.v1.jpg?odnHeight=447&odnWidth=794&odnBg=&odnDynImageQuality=70"
+          alt="make up"
+          class="rounded-lg"
+        />
+      </div>
+      <div class="col-span-3 row-span-12">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-a7c9/k2-_1047a286-8e5a-4bf6-9ee5-b47f1a44638b.v1.jpg?odnHeight=216&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="make up"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              <span class="hidden md:inline">Super-</span>low tech Prices
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-7ef8/k2-_6cc8061f-3488-4f6d-85d4-c8c3bc1f84af.v1.jpg?odnHeight=256&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="make up"
+            class="rounded-lg mt-[10px]"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              Warm accessories
+              <span class="hidden md:inline"> from $6</span>
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-b1a2/k2-_d2c04571-fafa-444a-9769-38f9bc0effbe.v1.jpg?odnHeight=578&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="supliments"
+            class="rounded-lg mt-[10px]"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              Supplements
+              <span class="hidden md:inline">for sniffle season</span>
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-3 row-span-6">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-66d9/k2-_65351341-f17f-4899-bb22-e5320952bc8e.v1.jpg?odnHeight=578&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="people"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] text-white md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              New & toasty
+              <span class="hidden md:inline">looks for the fam, from $13</span>
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 row-span-4">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-9faa/k2-_d446d83f-41d0-4c1f-9aae-c9eea3bcc250.v1.jpg?odnHeight=388&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="machine"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              Prep
+              <span class="hidden md:inline">for falling temps</span>
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 row-span-4">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-837f/k2-_faed165e-d6d8-4bac-94a2-2e1e6c63d2bc.v1.png?odnHeight=388&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="bag"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              upto 65% off
+              <span class="hidden md:inline"></span>
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 row-span-3">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-bb18/k2-_85c0f401-f467-4ef0-a932-f0ce178d8ce4.v1.jpg?odnHeight=216&odnWidth=385&odnBg=&odnDynImageQuality=70"
+            alt="bed"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] xl:w-[300px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              Save on
+              <span class="hidden md:inline">bed & bath </span>musts
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Shop <span class="hidden md:inline">Now</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-6 row-span-3">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-21d7/k2-_010ce435-9cfa-4871-98d9-b58993dee070.v1.jpg?odnHeight=216&odnWidth=794&odnBg=&odnDynImageQuality=70"
+            alt="walmart"
+            class="rounded-lg"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] lg:w-[500px]"
+          >
+            <p class="xl:text-[23px] lg:text-[12px] text-[8px] md:font-bold">
+              Walmart+ members
+              <span class="hidden md:inline">
+                get free delivery from their local stores</span
+              >
+            </p>
+            <p class="lg:text-[14px] text-[8px] underline active:no-underline">
+              <a href="#">Join Walmart+</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Continue your Shopping-->
+    <div class="p-4">
+      <div>
+        <div class="p-2">
+          <h1 class="text-2xl font-bold">Continue your Shopping</h1>
+        </div>
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+          >
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[175px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Multi-Color-Tie-Dye-Cozy-Fleece-Throw-Blanket-50-x-60_1986d470-6440-4ac2-8310-dfaef59fd359.bfeea8fc190a6f9693eda110bf94b169.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 1"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$24.18</h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                (3 pack) Mainstays Multi-Color Cozy Fleece Blanket
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[175px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Sherpa-Throw-Blanket-50-x60-Red_8fce9ad0-4aea-4f20-a885-404238afcfe4_3.378d24af2b8f4c745f756132c91cf468.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 2"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$9.55</h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Mainstays Sherpa Throw Blanket, 50"x60", Red
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Tartan-Plaid-Fleece-Throw-Blanket-50-x-60_e2ed2fc8-661f-4aaa-bf3f-3a70c719794f.bd2b24b00911417c30139b20decba64d.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 3"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$6.53</h3>
+              <p class="text-xs text-gray-500 mb-4">More options from $5.53</p>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Mainstays Tartan Plaid Fleece Throw Blanket 50"x60" All Ages
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Black-Stripe-Faux-Fur-Throw-50-x-60-Adult-Teen_629c3301-b738-4f00-a4d7-14c39e5d9913.91570a55a582f002431799a1dad5ce36.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 4"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$12.96</h3>
+              <p class="text-xs text-black-500 mb-4">
+                More options from $12.96 - $15.95
+              </p>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Black Stripe Faux Fur Throw, 50"x60", Adult/Teen
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Better-Homes-Gardens-Red-Plaid-Cozy-Knit-50X72-Throw_62a146fa-a8fe-48f1-b129-e5774d4d985e.23243819683bd6a536d24f6cc45cdc60.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 5"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$19.97</h3>
+              <p class="text-xs text-gray-500 mb-4">More options from $10.97</p>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Better Homes & Gardens Red Plaid Cozy Knit 50"x72' Throw
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/BHG-VEL-PLS-REV-FAUX-SHR-THR-HOLIDAY-TREE_d7596d8f-9a0f-46fa-9386-ca64de5af0a6.f8d95f9ea390d018e0773d99fc92eb46.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 6"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$11.64</h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Better Homes & Gardens Printed VelvetLoftTM Faux
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Save on funiture-->
+    <div class="p-4">
+      <div>
+        <div class="p-2">
+          <h1 class="text-2xl font-bold">Save on Funiture</h1>
+        </div>
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+          >
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[175px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/EUROCO-Twin-Size-Upholstery-Daybed-Trundle-Drawers-Storage-Platform-Bed-Big-Drawers-Moveable-Kids-Adults-No-Box-Spring-Needed-Dark-Gray_c40a7e11-3ae2-4dba-a418-7255f405a0c8.912d0c1c16e7fee8a0f084e87fc39f02.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 1"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-base text-green-700 font-bold mb-2">
+                Now $258.42
+                <span class="text-sm font-normal text-gray-500 line-through"
+                  >$480.99</span
+                >
+              </h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                EUROCO Twin Size Upholstery Daybed, Storage Sofa Bed
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[175px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Alden-Design-Reversible-Sectional-Sleeper-Sofa-with-USB-Type-C-Ports-Dark-Gray_2d5f81ac-dc69-4d57-842e-f70e16b2376e.e511e7fddb5600b63deb13b7578ec342.png?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 2"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-base text-green-700 font-bold mb-2">
+                Now $393.00
+                <span class="text-sm font-normal text-gray-500 line-through"
+                  >$578.00</span
+                >
+              </h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Alden Design Reversible Sectional Sofa
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Costway-Vanity-Table-Set-Makeup-Dressing-Kids-Girls-Study-Table-Tri-Folding-Mirror-Pink_0ac43ac7-8d80-4afb-b325-5e78db658af7.dfcd19521f908356f5521962a1d447a3.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 3"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-base text-green-700 font-bold mb-2">
+                Now $119.99
+                <span class="text-sm font-normal text-gray-500 line-through"
+                  >$209.00</span
+                >
+              </h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Costway Vanity Table Set Makeup Dressing Kids
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/asr/7b655a0f-81ce-4845-a4b2-be764afbf7f3.d9fafb659b5f4cf879161736d5009bc0.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 4"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-base text-green-700 font-bold mb-2">
+                Now $94.99
+                <span class="text-sm font-normal text-gray-500 line-through"
+                  >$189.99</span
+                >
+              </h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Giantex Gold Rolling Bar Cart, 3-Tire Cart
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/EUROCO-Twin-Size-Upholstery-DayBed-with-Convertible-Trundle-and-USB-Charging-Station-Gray_9535b54e-c1b2-41b4-916d-f1cae61a9673.33f7cc91482fb0dcd25bbfd76b956d67.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 5"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-base text-green-700 font-bold mb-2">
+                Now $252.00
+                <span class="text-sm font-normal text-gray-500 line-through"
+                  >$499.99</span
+                >
+              </h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                EUROCO Twin Size Upholstery Convertible Daybed
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/VASAGLE-8-Cube-Storage-Organizer-Bookcase-Book-Shelf-Storage-Cabinet-White_933196a5-8cb2-4124-abaa-cf09cad52efc.f51b93c448288179adda9ced0451c8fc.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 6"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-base text-green-700 font-bold mb-2">
+                Now $64.99
+                <span class="text-sm font-normal text-gray-500 line-through"
+                  >$98.99</span
+                >
+              </h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                VASAGLE Modern 8-Cube Bookcase Storage
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                Options
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Get it all here-->
+    <h1 class="p-4 text-2xl font-bold">Get it all right here</h1>
+    <div
+      class="container p-4 grid grid-rows-1 grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-10"
+    >
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-a46f/k2-_9fcefc0f-7789-444b-a2ac-b74d954a757e.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Grocery</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-c33b/k2-_a6ba4b83-58fd-4c17-8d2e-5612c0c34a77.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Home</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-eb6b/k2-_acb92b3f-a752-424e-8805-77a606d41e4f.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Patio & Garden</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-1e55/k2-_358d51c0-6981-4886-838c-0876cdc8e708.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Fashion</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-a6bc/k2-_c0f8378c-91a0-486d-8b03-72c40204458e.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Electronics</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-73ff/k2-_f9b52db8-83f7-4801-9e1c-31962de72acf.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Baby</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-ad0a/k2-_1a3653db-4f58-4dba-9e3b-a2aebd377df1.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Toys</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-fb42/k2-_aed7bf8c-d2ee-436b-933f-6572ff176f72.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Health & wellness</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-a1a4/k2-_8370e135-00db-4b77-93d7-5fcf753058aa.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Personal Care</h1>
+      </div>
+      <div>
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-ee95/k2-_36638382-33a2-41e7-8e1f-2444bd84d649.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+          alt=""
+        />
+        <h1 class="xl:w-[120px] text-center text-sm">Beauty</h1>
+      </div>
+    </div>
+
+    <!--Valentine Grid-->
+    <div class="grid grid-cols-12 grid-rows-9 gap-2 p-6">
+      <div class="col-span-5 row-span-9">
+        <div class="relative">
+          <img
+            src="https://i5.walmartimages.com/dfw/4ff9c6c9-4737/k2-_1b01f6e2-64f3-4c3d-8285-f7fdd40d9c6d.v1.jpg?odnHeight=658&odnWidth=658&odnBg=&odnDynImageQuality=70"
+            alt="Valentine's Day"
+            class="rounded-xl xl:h-[655px]"
+          />
+          <div
+            class="absolute top-[5px] left-[5px] md:top-[30px] md:left-[30px] lg:w-[300px]"
+          >
+            <p
+              class="xl:text-3xl lg:text-xl text-[8px] text-blue-900 md:font-bold"
+            >
+              All things l-o-v-e
+            </p>
+            <p
+              class="xl:text-4xl lg:text-xl text-[8px] text-blue-900 md:font-bold"
+            >
+              Valentine's Day HQ
+            </p>
+            <button
+              class="mt-4 px-6 py-2 bg-white border-2 border-black text-black font-bold rounded-full"
+            >
+              Shop all
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-4 row-span-4">
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-7d96/k2-_7abf485b-6771-43c4-a620-d1f331142518.v1.jpg?odnHeight=292&odnWidth=512&odnBg=&odnDynImageQuality=70"
+          alt="Gifts"
+          class="rounded-xl xl:h-[280px]"
+        />
+      </div>
+      <div class="col-span-3 row-span-9">
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-9ae3/k2-_ac32133c-eeba-4f63-8fce-c8561f3d207a.v1.jpg?odnHeight=658&odnWidth=385&odnBg=&odnDynImageQuality=70"
+          alt="Kids"
+          class="rounded-xl xl:h-[645px]"
+        />
+      </div>
+      <div class="col-span-2 row-span-5">
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-d3c7/k2-_f01fd054-d46e-4f3e-9d90-c25d235d5bf9.v1.jpg?odnHeight=342&odnWidth=248&odnBg=&odnDynImageQuality=70"
+          alt="Gifts"
+          class="rounded-xl xl:h-[355px]"
+        />
+      </div>
+      <div class="col-span-2 row-span-5">
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-9d35/k2-_10ab6e0a-1fbd-4af5-b6c3-69eca8c97f8c.v1.jpg?odnHeight=342&odnWidth=248&odnBg=&odnDynImageQuality=70"
+          alt="Gifts"
+          class="rounded-xl xl:h-[355px]"
+        />
+      </div>
+    </div>
+
+    <!--Year of the snake-->
+    <div class="p-6 lg:flex gap-4">
+      <div class="relative">
+        <img
+          src="https://i5.walmartimages.com/dfw/4ff9c6c9-c233/k2-_eef4f7d8-6dc7-4125-8d2b-f01625b1e34d.v1.jpg?odnHeight=447&odnWidth=794&odnBg=&odnDynImageQuality=70"
+          alt=""
+          class="rounded-2xl"
+        />
+        <div class="absolute top-[30px] left-[30px] xl:w-[300px]">
+          <h1 class="text-white text-xl font-bold">Lunar New Year is Jan.29</h1>
+          <h1 class="text-white lg:text-5xl font-bold mb-4">
+            Celebrate & prosper
+          </h1>
+          <button
+            class="mt-4 px-6 py-2 bg-white border-2 border-black text-black font-bold rounded-full"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="p-2">
+          <h1 class="text-2xl font-bold">The Year of the Snake</h1>
+        </div>
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[175px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Multi-Color-Tie-Dye-Cozy-Fleece-Throw-Blanket-50-x-60_1986d470-6440-4ac2-8310-dfaef59fd359.bfeea8fc190a6f9693eda110bf94b169.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 1"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$24.18</h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                (3 pack) Mainstays Multi-Color Cozy Fleece Blanket
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[175px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Sherpa-Throw-Blanket-50-x60-Red_8fce9ad0-4aea-4f20-a885-404238afcfe4_3.378d24af2b8f4c745f756132c91cf468.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 2"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$9.55</h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Mainstays Sherpa Throw Blanket, 50"x60", Red
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-4">
+              <div class="w-full h-[170px] mb-4">
+                <img
+                  src="https://i5.walmartimages.com/seo/Mainstays-Tartan-Plaid-Fleece-Throw-Blanket-50-x-60_e2ed2fc8-661f-4aaa-bf3f-3a70c719794f.bd2b24b00911417c30139b20decba64d.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                  alt="Product 3"
+                  class="object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mb-2">$6.53</h3>
+              <p class="text-[14px] text-black-500 mb-4 xl:w-[200px]">
+                Mainstays Tartan Plaid Fleece Throw Blanket 50"x60" All Ages
+              </p>
+              <button
+                class="border-2 text-black font-bold px-3 py-1 rounded-full hover:border-blue-600 hover:text-blue-600 w-max"
+              >
+                + Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="bg-blue-600 text-white">
+      <!-- Feedback Section -->
+      <div class="bg-blue-50 text-center py-8">
+        <p class="text-gray-800 text-base">We'd love to hear what you think!</p>
+        <button
+          class="mt-4 px-6 py-2 bg-white border-2 border-black rounded-full text-black font-medium"
+        >
+          Give feedback
+        </button>
+      </div>
+
+      <!-- Links Section -->
+      <div class="bg-[#004f9a] text-center py-4">
+        <div
+          class="container mx-auto text-sm flex flex-wrap justify-center gap-4"
+        >
+          <a href="#" class="hover:underline">All Departments</a>
+          <a href="#" class="hover:underline">Store Directory</a>
+          <a href="#" class="hover:underline">Careers</a>
+          <a href="#" class="hover:underline">Our Company</a>
+          <a href="#" class="hover:underline">Sell on Walmart.com</a>
+          <a href="#" class="hover:underline">Help</a>
+          <a href="#" class="hover:underline">Product Recalls</a>
+          <a href="#" class="hover:underline">Accessibility</a>
+          <a href="#" class="hover:underline">Tax Exempt Program</a>
+          <a href="#" class="hover:underline">Get the Walmart App</a>
+          <a href="#" class="hover:underline">Sign-up for Email</a>
+          <a href="#" class="hover:underline">Safety Data Sheet</a>
+          <a href="#" class="hover:underline">Terms of Use</a>
+          <a href="#" class="hover:underline">Privacy & Security</a>
+          <a href="#" class="hover:underline">California Supply Chain Act</a>
+          <a href="#" class="hover:underline">Your Privacy Choices</a>
+          <a href="#" class="hover:underline">Notice at Collection</a>
+          <a href="#" class="hover:underline">AdChoices</a>
+          <a href="#" class="hover:underline"
+            >Consumer Health Data Privacy Notices</a
+          >
+          <a href="#" class="hover:underline"
+            >Request My Personal Information</a
+          >
+          <a href="#" class="hover:underline">Brand Shop Directory</a>
+          <a href="#" class="hover:underline">Pharmacy</a>
+          <a href="#" class="hover:underline">Walmart Business</a>
+          <a href="#" class="hover:underline">#IYWYK</a>
+          <a href="#" class="hover:underline">Delete Account</a>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="bg-[#004f9a] text-center py-2 text-sm text-gray-300">
+        &copy; 2025 Walmart. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
